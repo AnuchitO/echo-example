@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 	"os"
 
@@ -22,5 +23,6 @@ func main() {
 	e.GET("/hello", helloHandler) // HL
 
 	port := os.Getenv("PORT")
-	e.Start(port) // listen and serve on 127.0.0.0:8080  // HL
+	log.Println("port:", port)
+	log.Fatal(e.Start(port))
 }
