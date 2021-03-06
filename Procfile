@@ -1,1 +1,1 @@
-web: bin/hometic
+web: bin/echo-example
