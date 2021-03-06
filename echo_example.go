@@ -24,5 +24,5 @@ func main() {
 
 	port := os.Getenv("PORT")
 	log.Println("port:", port)
-	log.Fatal(e.Start(port))
+	log.Fatal(e.Start(":" + port))
 }
